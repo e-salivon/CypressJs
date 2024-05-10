@@ -93,6 +93,7 @@
     "codelyzer": "^5.0.1",
     "conventional-changelog-cli": "^2.1.1",
     "cypress": "^13.9.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "husky": "0.13.3",
     "npm-run-all": "4.0.2",
     "rimraf": "2.6.1",
@@ -107,5 +108,15 @@
   "homepage": "https://github.com/akveo/ngx-admin#readme",
   "main": "karma.conf.js",
   "keywords": [],
-  "author": ""
+  "author": "",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/e2e",
+    "cucumberJson": {
+      "generate": "true",
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+  }
+  }
 }

@@ -1,0 +1,32 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Google Main Page",
+    "line": 1,
+    "id": "google-main-page",
+    "tags": [],
+    "uri": "Google.feature",
+    "elements": [
+      {
+        "id": "google-main-page;opening-a-search-engine-page",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Opening a search engine page",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open Google page",
+            "result": {
+              "status": "passed",
+              "duration": 2011000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
