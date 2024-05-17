@@ -1,35 +1,55 @@
 export class NavigationPages{
-    formLayout(){
+    FormLayout(){
         cy.contains('Forms').click();
-        cy.contains('Form Layouts').click();
+        cy.contains('Form Layouts').click({force: true});
     };
-    datePicker(){
+    DatePicker(){
         cy.contains('Forms').click();
-        cy.contains('Datepicker').click();
+        cy.contains('Datepicker').click({force: true});
     };
-    smartTable(){
+    Dialog(){
+        cy.contains('Modal & Overlays').click();
+        cy.contains('Dialog').click({force: true});
+    };
+    Window(){
+        cy.contains('Modal & Overlays').click();
+        cy.contains('Window').click({force: true});
+    };
+    Popover(){
+        cy.contains('Modal & Overlays').click();
+        cy.contains('Popover').click({force: true});
+    };
+    Toastr(){
+        cy.contains('Modal & Overlays').click();
+        cy.contains('Toastr').click({force: true});
+    };
+    Tooltip(){
+        cy.contains('Modal & Overlays').click();
+        cy.contains('Tooltip').click({force: true});
+    };
+    SmartTable(){
         cy.contains('Tables & Data').click();
-        cy.contains('Smart Table').click();
+        cy.contains('Smart Table').click({force: true});
     };
-    treeGrid(){
+    TreeGrid(){
         cy.contains('Tables & Data').click();
-        cy.contains('Tree Grid').click();
+        cy.contains('Tree Grid').click({force: true});
     };
-    stepper(){
+    Stepper(){
         cy.contains('Layout').click();
-        cy.contains('Stepper').click();
+        cy.contains('Stepper').click({force: true});
     };
-    accordion(){
+    Accordion(){
         cy.contains('Layout').click();
-        cy.contains('Accordion').click();
+        cy.contains('Accordion').click({force: true});
     };
-    login(){
+    Login(){
         cy.contains('Auth').click();
-        cy.contains('Login').click();
+        cy.contains('Login').click({force: true});
     };
-    register(){
+    Register(){
         cy.contains('Auth').click();
-        cy.contains('Register').click();
+        cy.contains('Register').click({force: true});
     };
 
 }
